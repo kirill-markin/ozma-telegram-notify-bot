@@ -1,0 +1,13 @@
+{
+    "token": "REMOVE_BY_TELEGRAM_BOT_TOKEN",
+    "bot_update_time": 20,
+    "bot_notification_time": "07:00:00",
+    "db_client_id": "REMOVE_BY_APPLICATION_CLIENT_ID",
+    "db_client_secret": "REMOVE_BY_APPLICATION_SECRET",
+    "db_address": "https://[REMOVE_BY_DATABASE_NAME].api.ozma.org",
+    "db_username": "REMOVE_BY_USERNAME_FROM_OZMA",
+    "db_password": "REMOVE_BY_PASSWORD_FROM_OZMA",
+    "db_schema_name": "REMOVE_BY_SCHEMA_NAME_BY_OZMA",
+    "db_view_name": "REMOVE_BY_VIEW_NAME_BY_OZMA",
+    "notification_list": "list.json"
+}
