@@ -48,7 +48,7 @@ Read full instractions here: https://docs.docker.com/engine/reference/commandlin
 
 ```shell
 cd ~ &&
-rm -rf notifBot/ &&
+sudo rm -rf notifBot/ &&
 git clone https://github.com/itgrus/notifBot.git &&
 cd ~/notifBot &&
 sudo ./quick_ubuntu_20_lts_startup.sh 
