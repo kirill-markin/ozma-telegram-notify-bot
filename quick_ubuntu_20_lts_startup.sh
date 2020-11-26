@@ -35,13 +35,13 @@ if [ "$1" != "-r" ]; then
   read -p 'db_username - Username in ozma: ' db_username
   jq -c --arg a "$db_username" '.db_username = $a' app/config.json > tmp.$$.json && mv tmp.$$.json app/config.json
 
-  read -sp 'db_password - Password in ozma: ' db_password
+  read -p 'db_password - Password in ozma: ' db_password
   jq -c --arg a "$db_password" '.db_password = $a' app/config.json > tmp.$$.json && mv tmp.$$.json app/config.json
 
-  read -sp 'db_schema_name - Password in ozma: ' db_schema_name
+  read -p 'db_schema_name - Schema in ozma: ' db_schema_name
   jq -c --arg a "$db_schema_name" '.db_schema_name = $a' app/config.json > tmp.$$.json && mv tmp.$$.json app/config.json
 
-  read -sp 'db_view_name - Password in ozma: ' db_view_name
+  read -p 'db_view_name - View in ozma: ' db_view_name
   jq -c --arg a "$db_view_name" '.db_view_name = $a' app/config.json > tmp.$$.json && mv tmp.$$.json app/config.json
   
   # list.json generation
