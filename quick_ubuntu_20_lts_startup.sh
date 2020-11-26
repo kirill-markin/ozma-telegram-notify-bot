@@ -49,7 +49,7 @@ if [ "$1" != "-r" ]; then
   cp app/list_example.json app/list.json
   
   read -p 'tg_id for user with access: ' tg_id
-  jq -c --arg a "$tg_id" '.[0].tg_id = $a' app/list.json > tmp.$$.json && mv tmp.$$.json app/list.json
+  jq -c --arg a "$tg_id" '.list[0].tg_id = $a' app/list.json > tmp.$$.json && mv tmp.$$.json app/list.json
 
 fi
 
