@@ -49,7 +49,7 @@ Read full instractions here: https://docs.docker.com/engine/reference/commandlin
 ```shell
 cd ~ &&
 sudo rm -rf notifBot/ &&
-git clone https://github.com/itgrus/notifBot.git &&
+git clone https://github.com/Kirmark/ozma-telegram-notify-bot.git &&
 cd ~/notifBot &&
 sudo ./quick_ubuntu_20_lts_startup.sh 
 ```
