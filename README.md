@@ -36,7 +36,7 @@ This deployment uses docker-compose so that services are automatically managed.
 
 Simply use:
 ```shell
-docker-compose up
+sudo docker-compose up --build
 ```
 
 Read full instractions here: https://docs.docker.com/engine/reference/commandline/run/.
