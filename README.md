@@ -1,6 +1,6 @@
 # notifBot
 
-If you use Ubuntu 20.4 you can go to ***Quick setup*** and run a script.
+If you use Ubuntu 20.04 you can go to ***Quick setup*** and run a script.
 
 
 ## Settings
@@ -42,7 +42,7 @@ sudo docker-compose up --build
 Read full instractions here: https://docs.docker.com/engine/reference/commandline/run/.
 
 
-## Quick setup For Ubuntu 20.4
+## Quick setup For Ubuntu 20.04
 
 ### First run
 
