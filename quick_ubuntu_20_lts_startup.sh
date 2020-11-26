@@ -46,4 +46,4 @@ if [ "$1" != "-r" ]; then
 
 fi
 
-docker-compose up
+sudo docker-compose up --build
