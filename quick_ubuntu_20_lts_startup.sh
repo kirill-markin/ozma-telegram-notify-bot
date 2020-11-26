@@ -14,9 +14,9 @@ if [ "$1" != "-r" ]; then
   systemctl start docker
   systemctl enable docker
 
-  # Config.json generation
-
   apt-get install jq
+  
+  # config.json generation
 
   cp app/config_example.json app/config.json
 
@@ -43,6 +43,13 @@ if [ "$1" != "-r" ]; then
 
   read -sp 'db_view_name - Password in ozma: ' db_view_name
   jq -c --arg a "$db_view_name" '.db_view_name = $a' app/config.json > tmp.$$.json && mv tmp.$$.json app/config.json
+  
+  # list.json generation
+  
+  cp app/list_example.json app/list.json
+  
+  read -p 'tg_id for user with access: ' tg_id
+  jq -c --arg a "$tg_id" '.[0].tg_id = $a' app/list.json > tmp.$$.json && mv tmp.$$.json app/list.json
 
 fi
 
