@@ -1,4 +1,4 @@
-# notifBot
+# ozma-telegram-notify-bot
 
 If you use Ubuntu 20.04 you can go to ***Quick setup*** and run a script.
 
@@ -48,9 +48,9 @@ Read full instractions here: https://docs.docker.com/engine/reference/commandlin
 
 ```shell
 cd ~ &&
-sudo rm -rf notifBot/ &&
+sudo rm -rf ozma-telegram-notify-bot/ &&
 git clone https://github.com/Kirmark/ozma-telegram-notify-bot.git &&
-cd ~/notifBot &&
+cd ~/ozma-telegram-notify-bot &&
 sudo ./quick_ubuntu_20_lts_startup.sh 
 ```
 
@@ -60,7 +60,7 @@ Ask this data from ozma.io developers.
 ### Rerun
 
 ```shell
-cd  ~/notifBot &&
+cd  ~/ozma-telegram-notify-bot &&
 git pull && 
 sudo ./quick_ubuntu_20_lts_startup.sh -r 
 ```
@@ -68,13 +68,13 @@ sudo ./quick_ubuntu_20_lts_startup.sh -r
 ### Check logs
 
 ```shell
-cd  ~/notifBot &&
+cd  ~/ozma-telegram-notify-bot &&
 sudo docker-compose logs
 ```
 
 ### Stop
 
 ```shell
-cd  ~/notifBot &&
+cd  ~/ozma-telegram-notify-bot &&
 sudo docker-compose down
 ```
