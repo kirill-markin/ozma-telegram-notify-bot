@@ -72,6 +72,12 @@ cd  ~/ozma-telegram-notify-bot &&
 sudo docker-compose logs
 ```
 
+### Save logs to file
+```shell
+cd  ~/ozma-telegram-notify-bot &&
+sudo docker-compose logs > bot.log
+```
+
 ### Stop
 
 ```shell
